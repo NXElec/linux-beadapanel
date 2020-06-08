@@ -503,8 +503,13 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ul-14x14-lpddr2-arm2.dtb \
 	imx6ul-14x14-evk-pf1550.dtb \
 	imx6ul-innostick6.dtb \
+	imx6ul-beadapanel.dtb \
+	imx6ul-innostick6-hbc07b.dtb \
+	imx6ul-beadapanel-hbc07b.dtb \
 	imx6ul-innostick6-hbc05.dtb \
+	imx6ul-beadapanel-hbc05.dtb \
 	imx6ul-innostick6-hbc05-goodix.dtb \
+	imx6ul-beadapanel-hbc05-goodix.dtb \
 	imx6ul-9x9-evk.dtb \
 	imx6ul-9x9-evk-btwifi.dtb \
 	imx6ul-9x9-evk-btwifi-oob.dtb \
@@ -535,8 +540,13 @@ dtb-$(CONFIG_SOC_IMX6ULL) += \
 	imx6ull-14x14-evk-usb-certi.dtb \
 	imx6ull-airsniffer.dtb \
 	imx6ull-innostick6-hbc05.dtb \
+	imx6ull-beadapanel-hbc05.dtb \
 	imx6ull-innostick6-hbc05-goodix.dtb \
+	imx6ull-beadapanel-hbc05-goodix.dtb \
+	imx6ull-innostick6-hbc07b.dtb \
+	imx6ull-beadapanel-hbc07b.dtb \
 	imx6ull-innostick6.dtb \
+	imx6ull-beadapanel.dtb \
 	imx6ull-9x9-evk.dtb \
 	imx6ull-9x9-evk-btwifi.dtb \
 	imx6ull-9x9-evk-btwifi-oob.dtb \
