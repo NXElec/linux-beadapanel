@@ -108,10 +108,12 @@ static void __init imx6ul_opp_check_speed_grading(struct device *cpu_dev)
 	val >>= OCOTP_CFG3_SPEED_SHIFT;
 	val &= 0x3;
 	if (cpu_is_imx6ul()) {
+#if 0
 		if (val < OCOTP_CFG3_SPEED_696MHZ) {
 			if (dev_pm_opp_disable(cpu_dev, 696000000))
 				pr_warn("Failed to disable 696MHz OPP\n");
 		}
+#endif
 	}
 
 	if (cpu_is_imx6ull()) {
