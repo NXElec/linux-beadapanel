@@ -547,6 +547,7 @@ dtb-$(CONFIG_SOC_IMX6ULL) += \
 	imx6ull-innostick6.dtb \
 	imx6ull-beadapanel.dtb \
 	imx6ull-beadapanel-hbc0686.dtb \
+	imx6ull-beadapanel-hbc04.dtb \
 	imx6ull-9x9-evk.dtb \
 	imx6ull-9x9-evk-btwifi.dtb \
 	imx6ull-9x9-evk-btwifi-oob.dtb \

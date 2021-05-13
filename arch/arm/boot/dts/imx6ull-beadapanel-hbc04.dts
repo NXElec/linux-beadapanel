@@ -48,7 +48,7 @@
 	
 	backlight {
 		compatible = "pwm-backlight";
-		pwms = <&pwm8 0 5000000>;
+		pwms = <&pwm8 0 40000>;
 		brightness-levels = <0 2 4 6 8 12 16 20 26 32 42 52 64 84 104 128 160 200 255>;
 		default-brightness-level = <15>;
 		status = "okay";
@@ -75,7 +75,7 @@
 	regulators {
 		compatible = "simple-bus";
 		#address-cells = <1>;
-		#size-cells = <0>;
+		#size-cells = <0>;		
 		
 	};
 
@@ -163,45 +163,54 @@
 
 		pinctrl_lcdif_dat: lcdifdatgrp {
 			fsl,pins = <
-				MX6UL_PAD_LCD_DATA00__LCDIF_DATA00  0x09
-				MX6UL_PAD_LCD_DATA01__LCDIF_DATA01  0x09
-				MX6UL_PAD_LCD_DATA02__LCDIF_DATA02  0x09
-				MX6UL_PAD_LCD_DATA03__LCDIF_DATA03  0x09
-				MX6UL_PAD_LCD_DATA04__LCDIF_DATA04  0x09
-				MX6UL_PAD_LCD_DATA05__LCDIF_DATA05  0x09
-				MX6UL_PAD_LCD_DATA06__LCDIF_DATA06  0x09
-				MX6UL_PAD_LCD_DATA07__LCDIF_DATA07  0x09
-				MX6UL_PAD_LCD_DATA08__LCDIF_DATA08  0x09
-				MX6UL_PAD_LCD_DATA09__LCDIF_DATA09  0x09
-				MX6UL_PAD_LCD_DATA10__LCDIF_DATA10  0x09
-				MX6UL_PAD_LCD_DATA11__LCDIF_DATA11  0x09
-				MX6UL_PAD_LCD_DATA12__LCDIF_DATA12  0x09
-				MX6UL_PAD_LCD_DATA13__LCDIF_DATA13  0x09
-				MX6UL_PAD_LCD_DATA14__LCDIF_DATA14  0x09
-				MX6UL_PAD_LCD_DATA15__LCDIF_DATA15  0x09
-				MX6UL_PAD_LCD_DATA16__LCDIF_DATA16  0x09
-				MX6UL_PAD_LCD_DATA17__LCDIF_DATA17  0x09
-				MX6UL_PAD_LCD_DATA18__LCDIF_DATA18  0x09
-				MX6UL_PAD_LCD_DATA19__LCDIF_DATA19  0x09
-				MX6UL_PAD_LCD_DATA20__LCDIF_DATA20  0x09
-				MX6UL_PAD_LCD_DATA21__LCDIF_DATA21  0x09
-				MX6UL_PAD_LCD_DATA22__LCDIF_DATA22  0x09
-				MX6UL_PAD_LCD_DATA23__LCDIF_DATA23  0x09
+				MX6UL_PAD_LCD_DATA00__LCDIF_DATA00  0x10
+				MX6UL_PAD_LCD_DATA01__LCDIF_DATA01  0x10
+				MX6UL_PAD_LCD_DATA02__LCDIF_DATA02  0x10
+				MX6UL_PAD_LCD_DATA03__LCDIF_DATA03  0x10
+				MX6UL_PAD_LCD_DATA04__LCDIF_DATA04  0x10
+				MX6UL_PAD_LCD_DATA05__LCDIF_DATA05  0x10
+				MX6UL_PAD_LCD_DATA06__LCDIF_DATA06  0x10
+				MX6UL_PAD_LCD_DATA07__LCDIF_DATA07  0x10
+				MX6UL_PAD_LCD_DATA08__LCDIF_DATA08  0x10
+				MX6UL_PAD_LCD_DATA09__LCDIF_DATA09  0x10
+				MX6UL_PAD_LCD_DATA10__LCDIF_DATA10  0x10
+				MX6UL_PAD_LCD_DATA11__LCDIF_DATA11  0x10
+				MX6UL_PAD_LCD_DATA12__LCDIF_DATA12  0x10
+				MX6UL_PAD_LCD_DATA13__LCDIF_DATA13  0x10
+				MX6UL_PAD_LCD_DATA14__LCDIF_DATA14  0x10
+				MX6UL_PAD_LCD_DATA15__LCDIF_DATA15  0x10
+				MX6UL_PAD_LCD_DATA16__LCDIF_DATA16  0x10
+				MX6UL_PAD_LCD_DATA17__LCDIF_DATA17  0x10
+				MX6UL_PAD_LCD_DATA18__LCDIF_DATA18  0x10
+				MX6UL_PAD_LCD_DATA19__LCDIF_DATA19  0x10
+				MX6UL_PAD_LCD_DATA20__LCDIF_DATA20  0x10
+				MX6UL_PAD_LCD_DATA21__LCDIF_DATA21  0x10
+				MX6UL_PAD_LCD_DATA22__LCDIF_DATA22  0x10
+				MX6UL_PAD_LCD_DATA23__LCDIF_DATA23  0x10
 			>;
 		};
 
 		pinctrl_lcdif_ctrl: lcdifctrlgrp {
 			fsl,pins = <
-				MX6UL_PAD_LCD_CLK__LCDIF_CLK	    0x29
-				MX6UL_PAD_LCD_ENABLE__LCDIF_ENABLE  0x29
-				MX6UL_PAD_LCD_HSYNC__LCDIF_HSYNC    0x29
-				MX6UL_PAD_LCD_VSYNC__LCDIF_VSYNC    0x29
+				MX6UL_PAD_LCD_CLK__LCDIF_CLK	    0x21
+				MX6UL_PAD_LCD_ENABLE__LCDIF_ENABLE  0x21
+				MX6UL_PAD_LCD_HSYNC__LCDIF_HSYNC    0x21
+				MX6UL_PAD_LCD_VSYNC__LCDIF_VSYNC    0x21
 			>;
 		};
 
 		pinctrl_pwm8: pwm8grp {
 			fsl,pins = <
 				MX6UL_PAD_ENET1_RX_ER__PWM8_OUT   0x11008
+			>;
+		};
+
+		pinctrl_tsc: tscgrp {
+			fsl,pins = <
+				MX6UL_PAD_GPIO1_IO01__GPIO1_IO01	0xb0
+				MX6UL_PAD_GPIO1_IO02__GPIO1_IO02	0xb0
+				MX6UL_PAD_GPIO1_IO03__GPIO1_IO03	0xb0
+				MX6UL_PAD_GPIO1_IO04__GPIO1_IO04	0xb0
 			>;
 		};
 
@@ -395,16 +404,16 @@
 			pixelclk-active = <0>;
 			};
 */
-	timing0: 7_1280x480 {
-			clock-frequency = <45000000>;
+		timing0: 4_480x800 {
+			clock-frequency = <33000000>;
 			hactive = <480>;
-			vactive = <1280>;
-			hfront-porch = <120>;
-			hback-porch = <117>;
-			hsync-len = <3>;
-			vback-porch = <15>;
-			vfront-porch = <2>;
-			vsync-len = <10>;
+			vactive = <800>;
+			hfront-porch = <67>;
+			hback-porch = <21>;
+			hsync-len = <13>;
+			vback-porch = <26>;
+			vfront-porch = <12>;
+			vsync-len = <13>;
 
 			hsync-active = <0>;
 			vsync-active = <0>;
@@ -424,6 +433,15 @@
 };
 
 &pxp {
+	status = "okay";
+};
+
+&tsc {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_tsc>;
+	xnur-gpio = <&gpio1 3 GPIO_ACTIVE_LOW>;
+	measure-delay-time = <0xffff>;
+	pre-charge-time = <0xfff>;
 	status = "okay";
 };
 
@@ -483,3 +501,4 @@
 	non-removable;
 	status = "okay";
 };
+
