@@ -334,7 +334,7 @@ static int __init ds1302_rtc_probe(struct platform_device *pdev)
 		return -ENODEV;
 	}
 
-	rtc = rtc_device_register("ds1302", &pdev->dev,
+	rtc = devm_rtc_device_register(&pdev->dev,"ds1302", 
 					   &ds1302_rtc_ops, THIS_MODULE);
 	if (IS_ERR(rtc))
 	{
