@@ -21,11 +21,11 @@
 		};
 	};
 
-	&sound-wm8960 {
+	&{/sound-wm8960} {
 		status = "disabled";	
 	};
 	
-	&spi4 {
+	&{/spi4} {
 		status = "disabled";
 	};
 };
