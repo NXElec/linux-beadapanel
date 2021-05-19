@@ -20,16 +20,16 @@
 			linux,default-trigger = "heartbeat";
 		};
 	};
-
-	&{/sound-wm8960} {
-		status = "disabled";	
-	};
-	
-	&{/spi4} {
-		status = "disabled";
-	};
 };
 
+&{/sound-wm8960} {
+	status = "disabled";	
+};
+	
+&{/spi4} {
+	status = "disabled";
+};
+	
 &backlight_display {
 	pwms = <&pwm8 0 40000>;
 	brightness-levels = <0 2 4 6 8 12 16 20 26 32 42 52 64 84 104 128 160 200 255>;
