@@ -379,12 +379,13 @@ static int imx6ul_opp_check_speed_grading(struct device *dev)
 	 */
 	val >>= OCOTP_CFG3_SPEED_SHIFT;
 	val &= 0x3;
-
+#if 0
 	if (of_machine_is_compatible("fsl,imx6ul")) {
 		if (val != OCOTP_CFG3_6UL_SPEED_696MHZ)
 			if (dev_pm_opp_disable(dev, 696000000))
 				dev_warn(dev, "failed to disable 696MHz OPP\n");
 	}
+#endif
 
 	if (of_machine_is_compatible("fsl,imx6ull")) {
 		if (val != OCOTP_CFG3_6ULL_SPEED_792MHZ)
