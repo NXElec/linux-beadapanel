@@ -735,7 +735,6 @@ config RTC_DRV_M41T94
 
 config RTC_DRV_DS1302
 	tristate "Dallas/Maxim DS1302"
-	depends on SPI
 	help
 	  If you say yes here you get support for the Dallas DS1302 RTC chips.
 
