@@ -660,6 +660,10 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ul-14x14-evk-ecspi-slave.dtb \
 	imx6ul-14x14-evk-ecspi.dtb \
 	imx6ul-14x14-evk-gpmi-weim.dtb \
+	imx6ul-beadapanel.db \
+	imx6ul-beadapanel-hbc05.dtb \
+	imx6ul-beadapanel-hbc05-goodix.dtb \
+	imx6ul-beadapanel-hbc0686.dtb \
 	imx6ul-9x9-evk.dtb \
 	imx6ul-9x9-evk-ldo.dtb \
 	imx6ul-9x9-evk-btwifi.dtb \
@@ -685,7 +689,10 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ull-14x14-evk-btwifi.dtb \
 	imx6ull-14x14-evk-btwifi-oob.dtb \
 	imx6ull-14x14-evk-gpmi-weim.dtb \
- imx6ull-beadapanel-hbc05.dtb \
+	imx6ull-beadapanel.dtb \
+	imx6ull-beadapanel-hbc05.dtb \
+ 	imx6ull-beadapanel-hbc05-goodix.dtb \
+	imx6ull-beadapanel-hbc0686.dtb \
 	imx6ull-9x9-evk.dtb \
 	imx6ull-9x9-evk-ldo.dtb \
 	imx6ull-9x9-evk-btwifi.dtb \
