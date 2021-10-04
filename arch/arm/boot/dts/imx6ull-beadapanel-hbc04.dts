@@ -122,6 +122,10 @@
 	status = "disabled";
 };
 
+&tsc {
+	status = "disabled";
+};
+
 &uart2 {
 	status = "disabled";
 };
