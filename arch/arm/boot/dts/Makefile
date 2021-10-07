@@ -660,7 +660,7 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ul-14x14-evk-ecspi-slave.dtb \
 	imx6ul-14x14-evk-ecspi.dtb \
 	imx6ul-14x14-evk-gpmi-weim.dtb \
-	imx6ul-beadapanel.db \
+	imx6ul-beadapanel.dtb \
 	imx6ul-beadapanel-hbc05.dtb \
 	imx6ul-beadapanel-hbc05-goodix.dtb \
 	imx6ul-beadapanel-hbc0686.dtb \
