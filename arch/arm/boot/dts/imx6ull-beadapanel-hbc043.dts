@@ -31,8 +31,8 @@
 };
 	
 &backlight_display {
-	pwms = <&pwm8 0 5000000>;
-	brightness-levels = <0 2 4 6 8 12 16 20 26 32 42 52 64 84 104 128 160 200 255>;
+	pwms = <&pwm8 0 40000>;
+	brightness-levels = <0 4 6 8 10 12 14 16 20 22 24 26 28 30 32 34 36 38 255>;
 	default-brightness-level = <0>;
 	status = "okay";
 };
